@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>404 — pi-x-pixel</title>
+  <meta name="robots" content="noindex,follow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@500&family=Inter:wght@400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --surface: #FAF9F6;
+      --text: #1A1A1A;
+      --secondary: #5C6471;
+      --accent: #D5582C;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--surface);
+      color: var(--text);
+      font-family: 'Inter', system-ui, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem 1.5rem;
+      text-align: center;
+    }
+    .glyph {
+      font-family: 'Newsreader', Georgia, serif;
+      font-size: clamp(5rem, 18vw, 9rem);
+      font-weight: 500;
+      letter-spacing: -0.04em;
+      line-height: 1;
+      margin-bottom: 1rem;
+    }
+    .glyph .x { color: var(--accent); }
+    p {
+      color: var(--secondary);
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+      max-width: 480px;
+    }
+    a {
+      color: var(--text);
+      text-decoration: none;
+      border-bottom: 1px solid var(--text);
+      padding-bottom: 2px;
+      font-weight: 500;
+    }
+    a:hover { color: var(--accent); border-color: var(--accent); }
+  </style>
+</head>
+<body>
+  <div class="glyph">4<span class="x">×</span>4</div>
+  <p>Diese Seite existiert nicht — oder noch nicht.</p>
+  <a href="/">← zurück zur Startseite</a>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>pi-x-pixel — Software toolkits for solo health practitioners</title>
+  <meta name="description" content="Software toolkits for solo functional medicine practitioners, dietitians, and health coaches. Built in Köln, Germany.">
+  <meta name="robots" content="index,follow">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="pi-x-pixel — Software toolkits for solo health practitioners">
+  <meta property="og:description" content="Software toolkits for solo functional medicine practitioners, dietitians, and health coaches. Built in Köln, Germany.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pi-x-pixel.com">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="pi-x-pixel">
+  <meta name="twitter:description" content="Software toolkits for solo health practitioners. Built in Köln, Germany.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@400;500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --surface: #FAF9F6;
+      --text: #1A1A1A;
+      --secondary: #5C6471;
+      --accent: #D5582C;
+      --border: #e5e5e5;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--surface);
+      color: var(--text);
+      font-family: 'Inter', system-ui, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      padding: 4rem 1.5rem 2rem;
+      max-width: 720px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+    h1 {
+      font-family: 'Newsreader', Georgia, serif;
+      font-size: clamp(3rem, 8vw, 5rem);
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      margin-bottom: 2rem;
+      line-height: 1;
+    }
+    h1 .x {
+      color: var(--accent);
+      font-weight: 500;
+    }
+    p.tagline {
+      font-family: 'Newsreader', Georgia, serif;
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+      color: var(--text);
+      line-height: 1.4;
+    }
+    p.intro {
+      color: var(--secondary);
+      margin-bottom: 3rem;
+      max-width: 560px;
+    }
+    .actions {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      margin-bottom: 3rem;
+      max-width: 360px;
+    }
+    a.button {
+      display: inline-block;
+      padding: 0.85rem 1.5rem;
+      border: 1px solid var(--text);
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.2s ease;
+      text-align: center;
+    }
+    a.button:hover { background: var(--text); color: var(--surface); }
+    a.button.primary {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: white;
+    }
+    a.button.primary:hover {
+      background: var(--text);
+      border-color: var(--text);
+    }
+    a.button.disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+      pointer-events: none;
+    }
+    .sister-site {
+      margin-bottom: 3rem;
+      padding: 1rem 1.25rem;
+      background: white;
+      border-left: 3px solid var(--accent);
+      font-size: 0.95rem;
+      color: var(--secondary);
+    }
+    .sister-site a {
+      color: var(--text);
+      text-decoration: underline;
+    }
+    footer {
+      margin-top: auto;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.85rem;
+      color: var(--secondary);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    footer a {
+      color: var(--secondary);
+      text-decoration: none;
+    }
+    footer a:hover { color: var(--text); }
+    .footer-sep::before {
+      content: "·";
+      margin-right: 1rem;
+    }
+    @media (max-width: 480px) {
+      body { padding: 2rem 1rem 1.5rem; }
+      footer { font-size: 0.8rem; }
+      .footer-sep::before { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>pi<span class="x">×</span>pixel</h1>
+    <p class="tagline">Software toolkits for solo health practitioners.</p>
+    <p class="intro">Built in Köln. Open-source memory connector on GitHub. The first toolkit — a self-hosted WhatsApp + Notion + Claude system for solo functional-medicine practitioners — launches June 2026 on Gumroad.</p>
+
+    <div class="actions">
+      <a class="button primary" href="https://github.com/pi-x-pixel" target="_blank" rel="noopener">See the connector on GitHub →</a>
+      <a class="button disabled" href="#" aria-disabled="true">Toolkit on Gumroad — June 2026</a>
+    </div>
+
+    <div class="sister-site">
+      Looking for the website-generator project? → <a href="https://pi-mal-pixel.de">pi-mal-pixel.de</a> (Deutsch)
+    </div>
+  </main>
+
+  <footer>
+    <span>Built by Pi mal Pixel · Köln</span>
+    <span class="footer-sep"><a href="/impressum.html">Impressum</a></span>
+    <span class="footer-sep"><a href="/datenschutz.html">Datenschutz</a></span>
+    <span class="footer-sep"><a href="mailto:hello@pi-x-pixel.com">hello@pi-x-pixel.com</a></span>
+  </footer>
+</body>
+</html>

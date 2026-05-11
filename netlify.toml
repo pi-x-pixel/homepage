@@ -1,0 +1,29 @@
+# Netlify deploy configuration for pi-x-pixel.com
+# Static-only homepage, no build step required.
+
+[build]
+  publish = "."
+
+# Security headers — applied to all paths
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "geolocation=(), microphone=(), camera=(), payment=()"
+    Content-Security-Policy = "default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; script-src 'self'; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'"
+
+# Cache HTML for 5 min, allow CDN refresh
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=300, must-revalidate"
+
+# Redirect www to apex (canonical)
+[[redirects]]
+  from = "https://www.pi-x-pixel.com/*"
+  to = "https://pi-x-pixel.com/:splat"
+  status = 301
+  force = true
