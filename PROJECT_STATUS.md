@@ -1,7 +1,7 @@
 ---
 project_name: "Pi*Pixel Homepage"
-report_date: "2026-05-22"
-previous_report_date: "2026-05-18"
+report_date: "2026-07-02"
+previous_report_date: "2026-05-22"
 overall_status: "On Track"
 priority: "Hoch"
 phase: "Pre-Launch (statische Site fertig)"
@@ -9,14 +9,14 @@ progress: 65
 next_tasks:
   - "Datenschutz-Placeholder durch echten DSGVO-Text ersetzen (e-recht24-Generator)"
   - "Impressum-Platzhalter (Name, Adresse, USt-ID) ausfuellen"
-  - "Domain DNS auf Netlify schwenken und live schalten"
+  - "Netlify-Deploy + Porkbun-DNS schwenken und live schalten"
   - "Pre-Launch-Checkliste durchgehen"
 ---
 
 # Projekt-Status-Report
 
 ## Zusammenfassung
-Pi*Pixel Homepage ist die statische Marketing-/Brand-Site fuer `pi-x-pixel.com` — Single-Screen, kein Build-Step, kein JS-Framework. Site ist deploy-fertig, sobald Impressum + Datenschutz finalisiert sind. Keine inhaltliche Aktivitaet im Berichtszeitraum (nur eine untracked `.gitignore`).
+Pi*Pixel Homepage ist die statische Marketing-/Brand-Site fuer `pi-x-pixel.com` — Single-Screen, kein Build-Step, kein JS-Framework. Site ist deploy-fertig, sobald Impressum + Datenschutz finalisiert sind. Keine inhaltliche Aktivitaet im Berichtszeitraum — der einzige Commit war ein automatischer Backup-Lauf, der die neue `.gitignore`, CLAUDE.md und PROJECT_STATUS.md erfasst hat.
 
 ## Seit letztem Report erledigt
 _Keine_
@@ -37,4 +37,4 @@ _Keine_
 - Deploy-Methode: Drag&Drop (schneller) vs. Git-Linked (bessere Iteration)?
 
 ## Notizen
-Aus dem frueheren Projekt `website-generator` ausgegliedert (Pi*Pixel Branding). Synergie mit `pi-x-pixel-repo` (n8n-WhatsApp-Postgres-Memory-Connector — selbe Brand). Site enthaelt nur statische HTML-Files, kein Build noetig. Letzter Commit unveraendert: 6decd5b. Eine untracked `.gitignore` ist hinzugekommen, sonst keine Aenderung.
+Aus dem frueheren Projekt `website-generator` ausgegliedert (Pi*Pixel Branding). Synergie mit `pi-x-pixel-repo` (n8n-WhatsApp-Postgres-Memory-Connector — selbe Brand). Site enthaelt nur statische HTML-Files, kein Build noetig. Inhaltlich unveraendert seit dem Initial-Commit 6decd5b; die per Auto-Backup (6f150fd, 2026-06-24) hinzugekommene `.gitignore` ist jetzt versioniert. Launch weiterhin nur durch die beiden Rechtstext-Platzhalter blockiert.
